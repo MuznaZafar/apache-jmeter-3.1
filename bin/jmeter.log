@@ -1,0 +1,304 @@
+2017/03/14 10:53:15 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_GB 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: Loading user properties from: C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\user.properties 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: Loading system properties from: C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\system.properties 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: Version 3.1 r1770033 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: java.version=1.8.0_121 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: os.name=Windows 10 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: os.arch=amd64 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: os.version=10.0 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: file.encoding=Cp1252 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: Max memory     =3103784960 
+2017/03/14 10:53:19 INFO  - jmeter.JMeter: Available Processors =4 
+2017/03/14 10:53:20 INFO  - jmeter.JMeter: Default Locale=English (United Kingdom) 
+2017/03/14 10:53:20 INFO  - jmeter.JMeter: JMeter  Locale=English (United Kingdom) 
+2017/03/14 10:53:20 INFO  - jmeter.JMeter: JMeterHome=C:\Users\Muzna\Downloads\apache-jmeter-3.1 
+2017/03/14 10:53:20 INFO  - jmeter.JMeter: user.dir  =C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin 
+2017/03/14 10:53:20 INFO  - jmeter.JMeter: PWD       =C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin 
+2017/03/14 10:53:20 INFO  - jmeter.JMeter: IP: 192.168.100.12 Name: Muzna FullName: Muzna 
+2017/03/14 10:53:23 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: javax.swing.plaf.metal.MetalLookAndFeel [Metal, CrossPlatform] 
+2017/03/14 10:53:23 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2017/03/14 10:53:30 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2017/03/14 10:53:30 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2017/03/14 10:53:44 INFO  - org.jmeterplugins.repository.PluginManager: Plugins Status: [jmeter-ftp=3.1, jmeter-http=3.1, jmeter-jdbc=3.1, jmeter-jms=3.1, jmeter-core=3.1, jmeter-junit=3.1, jmeter-java=3.1, jmeter-ldap=3.1, mqtt-sampler=0.0.1-SNAPSHOT, jmeter-mail=3.1, jmeter-mongodb=3.1, jmeter-native=3.1, jpgc-plugins-manager=0.11, jmeter-tcp=3.1, jmeter-components=3.1] 
+2017/03/14 10:53:45 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.assertions.BSFAssertion 
+2017/03/14 10:53:47 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.extractor.BSFPostProcessor 
+2017/03/14 10:53:47 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.modifiers.BSFPreProcessor 
+2017/03/14 10:53:47 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/03/14 10:53:47 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/03/14 10:53:47 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/03/14 10:53:47 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/03/14 10:53:47 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2017/03/14 10:53:47 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2017/03/14 10:53:49 INFO  - jorphan.exec.KeyToolUtils: keytool found at 'keytool' 
+2017/03/14 10:53:49 INFO  - jmeter.protocol.http.proxy.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\proxyserver.jks 
+2017/03/14 10:53:49 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.java.sampler.BSFSampler 
+2017/03/14 10:53:49 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.config.MongoSourceElement 
+2017/03/14 10:53:49 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.sampler.MongoScriptSampler 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_qos] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_at_most_once] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_at_least_once] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_exactly_once] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_client_types] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_blocking_client] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_async_client] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_message_input_type] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_message_input_type_text] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_message_input_type_file] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_qos] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_at_most_once] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_at_least_once] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_exactly_once] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_client_types] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_blocking_client] 
+2017/03/14 10:53:49 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_async_client] 
+2017/03/14 10:53:50 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.timers.BSFTimer 
+2017/03/14 10:53:50 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.visualizers.BSFListener 
+2017/03/14 10:53:51 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.visualizers.MonitorHealthVisualizer 
+2017/03/14 10:53:51 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2017/03/14 10:53:51 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2017/03/14 10:53:51 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2017/03/14 10:53:51 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2017/03/14 10:54:12 INFO  - jmeter.services.FileServer: Default base='C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin' 
+2017/03/14 10:54:12 INFO  - jmeter.gui.action.Load: Loading file: C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\MQTT publisher.jmx 
+2017/03/14 10:54:12 INFO  - jmeter.services.FileServer: Set new base='C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests' 
+2017/03/14 10:54:13 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2017/03/14 10:54:13 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2017/03/14 10:54:13 INFO  - jmeter.save.SaveService: Using SaveService properties version 3.1 
+2017/03/14 10:54:13 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2017/03/14 10:54:13 INFO  - jmeter.save.SaveService: Loading file: C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\MQTT publisher.jmx 
+2017/03/14 10:54:13 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_qos] 
+2017/03/14 10:54:13 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_at_most_once] 
+2017/03/14 10:54:13 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_at_least_once] 
+2017/03/14 10:54:13 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_exactly_once] 
+2017/03/14 10:54:13 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_client_types] 
+2017/03/14 10:54:13 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_blocking_client] 
+2017/03/14 10:54:13 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_async_client] 
+2017/03/14 10:54:13 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_message_input_type] 
+2017/03/14 10:54:13 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_message_input_type_text] 
+2017/03/14 10:54:13 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_message_input_type_file] 
+2017/03/14 10:54:13 INFO  - jmeter.services.FileServer: Set new base='C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests' 
+2017/03/14 10:55:04 INFO  - jmeter.gui.action.Load: Loading file: C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\MQTT_sample.jmx 
+2017/03/14 10:55:04 INFO  - jmeter.services.FileServer: Set new base='C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests' 
+2017/03/14 10:55:04 INFO  - jmeter.save.SaveService: Loading file: C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\MQTT_sample.jmx 
+2017/03/14 10:55:04 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_qos] 
+2017/03/14 10:55:04 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_at_most_once] 
+2017/03/14 10:55:04 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_at_least_once] 
+2017/03/14 10:55:04 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_exactly_once] 
+2017/03/14 10:55:04 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_client_types] 
+2017/03/14 10:55:04 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_blocking_client] 
+2017/03/14 10:55:04 WARN  - jmeter.util.JMeterUtils: ERROR! Resource string not found: [mqtt_async_client] 
+2017/03/14 10:55:04 INFO  - jmeter.services.FileServer: Set new base='C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests' 
+2017/03/14 10:55:18 INFO  - jmeter.gui.action.Load: Loading file: C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\MQTT publisher.jmx 
+2017/03/14 10:55:18 INFO  - jmeter.services.FileServer: Set new base='C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests' 
+2017/03/14 10:55:18 INFO  - jmeter.save.SaveService: Loading file: C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\MQTT publisher.jmx 
+2017/03/14 10:55:18 INFO  - jmeter.services.FileServer: Set new base='C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests' 
+2017/03/14 10:55:38 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2017/03/14 10:55:38 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/03/14 10:55:38 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/03/14 10:55:38 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2017/03/14 10:55:39 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group 
+2017/03/14 10:55:39 INFO  - jmeter.engine.StandardJMeterEngine: Starting 10 threads for group Thread Group. 
+2017/03/14 10:55:39 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2017/03/14 10:55:39 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 10 ramp-up 10 perThread 1000.0 delayedStart=false 
+2017/03/14 10:55:39 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2017/03/14 10:55:39 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2017/03/14 10:55:39 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-1 
+2017/03/14 10:55:39 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connecting to tcp://35.154.27.43 with client ID '1488285660625.Muzna' and cleanSession                                   is true as an async clientt 
+2017/03/14 10:55:40 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-2 
+2017/03/14 10:55:40 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connecting to tcp://35.154.27.43 with client ID '1488285660625.Muzna' and cleanSession                                   is true as an async clientt 
+2017/03/14 10:55:40 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connected 
+2017/03/14 10:55:40 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Published 
+2017/03/14 10:55:40 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Delivery complete callback: Publish Completed From JMeter 
+2017/03/14 10:55:40 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-1 
+2017/03/14 10:55:40 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-1 
+2017/03/14 10:55:41 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connected 
+2017/03/14 10:55:41 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Delivery complete callback: Publish Completed From JMeter 
+2017/03/14 10:55:41 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Published 
+2017/03/14 10:55:41 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-2 
+2017/03/14 10:55:41 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-2 
+2017/03/14 10:55:41 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connection to tcp://35.154.27.43 lost!Connection lost (32109) - java.io.EOFException 
+2017/03/14 10:55:41 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-3 
+2017/03/14 10:55:41 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connecting to tcp://35.154.27.43 with client ID '1488285660625.Muzna' and cleanSession                                   is true as an async clientt 
+2017/03/14 10:55:42 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connection to tcp://35.154.27.43 lost!Connection lost (32109) - java.io.EOFException 
+2017/03/14 10:55:42 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connected 
+2017/03/14 10:55:42 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Published 
+2017/03/14 10:55:42 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Delivery complete callback: Publish Completed From JMeter 
+2017/03/14 10:55:42 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-3 
+2017/03/14 10:55:42 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-3 
+2017/03/14 10:55:42 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-4 
+2017/03/14 10:55:42 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connecting to tcp://35.154.27.43 with client ID '1488285660625.Muzna' and cleanSession                                   is true as an async clientt 
+2017/03/14 10:55:43 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connection to tcp://35.154.27.43 lost!Connection lost (32109) - java.io.EOFException 
+2017/03/14 10:55:43 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connected 
+2017/03/14 10:55:43 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Published 
+2017/03/14 10:55:43 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Delivery complete callback: Publish Completed From JMeter 
+2017/03/14 10:55:43 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-4 
+2017/03/14 10:55:43 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-4 
+2017/03/14 10:55:43 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-5 
+2017/03/14 10:55:43 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connecting to tcp://35.154.27.43 with client ID '1488285660625.Muzna' and cleanSession                                   is true as an async clientt 
+2017/03/14 10:55:44 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connected 
+2017/03/14 10:55:44 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Published 
+2017/03/14 10:55:44 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-5 
+2017/03/14 10:55:44 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-5 
+2017/03/14 10:55:44 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Delivery complete callback: Publish Completed From JMeter 
+2017/03/14 10:55:44 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connection to tcp://35.154.27.43 lost!Connection lost (32109) - java.io.EOFException 
+2017/03/14 10:55:44 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-6 
+2017/03/14 10:55:44 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connecting to tcp://35.154.27.43 with client ID '1488285660625.Muzna' and cleanSession                                   is true as an async clientt 
+2017/03/14 10:55:45 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connection to tcp://35.154.27.43 lost!Connection lost (32109) - java.io.EOFException 
+2017/03/14 10:55:45 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connected 
+2017/03/14 10:55:45 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Published 
+2017/03/14 10:55:45 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Delivery complete callback: Publish Completed From JMeter 
+2017/03/14 10:55:45 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-6 
+2017/03/14 10:55:45 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-6 
+2017/03/14 10:55:45 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-7 
+2017/03/14 10:55:45 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connecting to tcp://35.154.27.43 with client ID '1488285660625.Muzna' and cleanSession                                   is true as an async clientt 
+2017/03/14 10:55:46 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connected 
+2017/03/14 10:55:46 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Delivery complete callback: Publish Completed From JMeter 
+2017/03/14 10:55:46 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Published 
+2017/03/14 10:55:46 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-7 
+2017/03/14 10:55:46 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-7 
+2017/03/14 10:55:46 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connection to tcp://35.154.27.43 lost!Connection lost (32109) - java.io.EOFException 
+2017/03/14 10:55:46 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-8 
+2017/03/14 10:55:46 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connecting to tcp://35.154.27.43 with client ID '1488285660625.Muzna' and cleanSession                                   is true as an async clientt 
+2017/03/14 10:55:47 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connection to tcp://35.154.27.43 lost!Connection lost (32109) - java.io.EOFException 
+2017/03/14 10:55:47 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connected 
+2017/03/14 10:55:47 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Published 
+2017/03/14 10:55:47 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Delivery complete callback: Publish Completed From JMeter 
+2017/03/14 10:55:47 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-8 
+2017/03/14 10:55:47 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-8 
+2017/03/14 10:55:47 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-9 
+2017/03/14 10:55:47 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connecting to tcp://35.154.27.43 with client ID '1488285660625.Muzna' and cleanSession                                   is true as an async clientt 
+2017/03/14 10:55:48 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connection to tcp://35.154.27.43 lost!Connection lost (32109) - java.io.EOFException 
+2017/03/14 10:55:48 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connected 
+2017/03/14 10:55:48 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Published 
+2017/03/14 10:55:48 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Delivery complete callback: Publish Completed From JMeter 
+2017/03/14 10:55:48 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-9 
+2017/03/14 10:55:48 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-9 
+2017/03/14 10:55:48 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-10 
+2017/03/14 10:55:48 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connecting to tcp://35.154.27.43 with client ID '1488285660625.Muzna' and cleanSession                                   is true as an async clientt 
+2017/03/14 10:55:49 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connection to tcp://35.154.27.43 lost!Connection lost (32109) - java.io.EOFException 
+2017/03/14 10:55:49 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Connected 
+2017/03/14 10:55:49 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Published 
+2017/03/14 10:55:49 INFO  - jmeter.protocol.mqtt.paho.clients.AsyncClient: Delivery complete callback: Publish Completed From JMeter 
+2017/03/14 10:55:49 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-10 
+2017/03/14 10:55:49 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-10 
+2017/03/14 10:55:49 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2017/03/14 10:55:49 ERROR - jmeter.protocol.mqtt.paho.clients.AsyncClient: Client is disconnected Client is disconnected (32101)
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:31)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms.disconnect(ClientComms.java:422)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:537)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:506)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:513)
+	at org.apache.jmeter.protocol.mqtt.paho.clients.AsyncClient.close(AsyncClient.java:217)
+	at org.apache.jmeter.protocol.mqtt.client.ClientPool.clearClient(ClientPool.java:42)
+	at org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler.testEnded(PublisherSampler.java:172)
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:216)
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:437)
+	at java.lang.Thread.run(Unknown Source)
+
+2017/03/14 10:55:49 ERROR - jmeter.protocol.mqtt.paho.clients.AsyncClient: Client is disconnected Client is disconnected (32101)
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:31)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms.disconnect(ClientComms.java:422)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:537)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:506)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:513)
+	at org.apache.jmeter.protocol.mqtt.paho.clients.AsyncClient.close(AsyncClient.java:217)
+	at org.apache.jmeter.protocol.mqtt.client.ClientPool.clearClient(ClientPool.java:42)
+	at org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler.testEnded(PublisherSampler.java:172)
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:216)
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:437)
+	at java.lang.Thread.run(Unknown Source)
+
+2017/03/14 10:55:49 ERROR - jmeter.protocol.mqtt.paho.clients.AsyncClient: Client is disconnected Client is disconnected (32101)
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:31)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms.disconnect(ClientComms.java:422)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:537)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:506)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:513)
+	at org.apache.jmeter.protocol.mqtt.paho.clients.AsyncClient.close(AsyncClient.java:217)
+	at org.apache.jmeter.protocol.mqtt.client.ClientPool.clearClient(ClientPool.java:42)
+	at org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler.testEnded(PublisherSampler.java:172)
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:216)
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:437)
+	at java.lang.Thread.run(Unknown Source)
+
+2017/03/14 10:55:49 ERROR - jmeter.protocol.mqtt.paho.clients.AsyncClient: Client is disconnected Client is disconnected (32101)
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:31)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms.disconnect(ClientComms.java:422)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:537)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:506)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:513)
+	at org.apache.jmeter.protocol.mqtt.paho.clients.AsyncClient.close(AsyncClient.java:217)
+	at org.apache.jmeter.protocol.mqtt.client.ClientPool.clearClient(ClientPool.java:42)
+	at org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler.testEnded(PublisherSampler.java:172)
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:216)
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:437)
+	at java.lang.Thread.run(Unknown Source)
+
+2017/03/14 10:55:49 ERROR - jmeter.protocol.mqtt.paho.clients.AsyncClient: Client is disconnected Client is disconnected (32101)
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:31)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms.disconnect(ClientComms.java:422)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:537)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:506)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:513)
+	at org.apache.jmeter.protocol.mqtt.paho.clients.AsyncClient.close(AsyncClient.java:217)
+	at org.apache.jmeter.protocol.mqtt.client.ClientPool.clearClient(ClientPool.java:42)
+	at org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler.testEnded(PublisherSampler.java:172)
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:216)
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:437)
+	at java.lang.Thread.run(Unknown Source)
+
+2017/03/14 10:55:49 ERROR - jmeter.protocol.mqtt.paho.clients.AsyncClient: Client is disconnected Client is disconnected (32101)
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:31)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms.disconnect(ClientComms.java:422)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:537)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:506)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:513)
+	at org.apache.jmeter.protocol.mqtt.paho.clients.AsyncClient.close(AsyncClient.java:217)
+	at org.apache.jmeter.protocol.mqtt.client.ClientPool.clearClient(ClientPool.java:42)
+	at org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler.testEnded(PublisherSampler.java:172)
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:216)
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:437)
+	at java.lang.Thread.run(Unknown Source)
+
+2017/03/14 10:55:49 ERROR - jmeter.protocol.mqtt.paho.clients.AsyncClient: Client is disconnected Client is disconnected (32101)
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:31)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms.disconnect(ClientComms.java:422)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:537)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:506)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:513)
+	at org.apache.jmeter.protocol.mqtt.paho.clients.AsyncClient.close(AsyncClient.java:217)
+	at org.apache.jmeter.protocol.mqtt.client.ClientPool.clearClient(ClientPool.java:42)
+	at org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler.testEnded(PublisherSampler.java:172)
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:216)
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:437)
+	at java.lang.Thread.run(Unknown Source)
+
+2017/03/14 10:55:49 ERROR - jmeter.protocol.mqtt.paho.clients.AsyncClient: Client is disconnected Client is disconnected (32101)
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:31)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms.disconnect(ClientComms.java:422)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:537)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:506)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:513)
+	at org.apache.jmeter.protocol.mqtt.paho.clients.AsyncClient.close(AsyncClient.java:217)
+	at org.apache.jmeter.protocol.mqtt.client.ClientPool.clearClient(ClientPool.java:42)
+	at org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler.testEnded(PublisherSampler.java:172)
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:216)
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:437)
+	at java.lang.Thread.run(Unknown Source)
+
+2017/03/14 10:55:49 ERROR - jmeter.protocol.mqtt.paho.clients.AsyncClient: Client is disconnected Client is disconnected (32101)
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:31)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms.disconnect(ClientComms.java:422)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:537)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:506)
+	at org.eclipse.paho.client.mqttv3.MqttAsyncClient.disconnect(MqttAsyncClient.java:513)
+	at org.apache.jmeter.protocol.mqtt.paho.clients.AsyncClient.close(AsyncClient.java:217)
+	at org.apache.jmeter.protocol.mqtt.client.ClientPool.clearClient(ClientPool.java:42)
+	at org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler.testEnded(PublisherSampler.java:172)
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:216)
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:437)
+	at java.lang.Thread.run(Unknown Source)
+
+2017/03/14 10:55:49 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 

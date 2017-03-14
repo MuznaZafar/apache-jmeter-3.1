@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.1">
+<hashTree>
+<TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+<stringProp name="TestPlan.comments"></stringProp>
+<boolProp name="TestPlan.functional_mode">false</boolProp>
+<boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+<elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+<collectionProp name="Arguments.arguments" />
+</elementProp>
+<stringProp name="TestPlan.user_define_classpath"></stringProp>
+</TestPlan>
+<hashTree>
+<ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+<elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+<boolProp name="LoopController.continue_forever">false</boolProp>
+<stringProp name="LoopController.loops">1</stringProp>
+</elementProp>
+<stringProp name="ThreadGroup.num_threads">1</stringProp>
+<stringProp name="ThreadGroup.ramp_time">1</stringProp>
+<longProp name="ThreadGroup.start_time">1281132211000</longProp>
+<longProp name="ThreadGroup.end_time">1281132211000</longProp>
+<boolProp name="ThreadGroup.scheduler">false</boolProp>
+<stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+<stringProp name="ThreadGroup.duration"></stringProp>
+<stringProp name="ThreadGroup.delay"></stringProp>
+</ThreadGroup>
+<hashTree>
+<CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+<collectionProp name="CookieManager.cookies" />
+<boolProp name="CookieManager.clearEachIteration">false</boolProp>
+<stringProp name="CookieManager.policy">rfc2109</stringProp>
+</CookieManager>
+<hashTree />
+<Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+<collectionProp name="Arguments.arguments">
+<elementProp name="VIEWSTATE" elementType="Argument">
+<stringProp name="Argument.name">VIEWSTATE</stringProp>
+<stringProp name="Argument.value"></stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+</elementProp>
+<elementProp name="jsessionid" elementType="Argument">
+<stringProp name="Argument.name">jsessionid</stringProp>
+<stringProp name="Argument.value"></stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+</elementProp>
+</collectionProp>
+</Arguments>
+<hashTree />
+<HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+<collectionProp name="HeaderManager.headers">
+<elementProp name="" elementType="Header">
+<stringProp xml:space="preserve" name="Header.name">User-Agent</stringProp>
+<stringProp xml:space="preserve" name="Header.value">Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; MANMJS; rv:11.0) like Gecko</stringProp>
+</elementProp>
+<elementProp name="" elementType="Header">
+<stringProp xml:space="preserve" name="Header.name">Accept</stringProp>
+<stringProp xml:space="preserve" name="Header.value">image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/xaml+xml, application/x-ms-xbap, */*</stringProp>
+</elementProp>
+<elementProp name="" elementType="Header">
+<stringProp xml:space="preserve" name="Header.name">Accept-Language</stringProp>
+<stringProp xml:space="preserve" name="Header.value">en-GB,en;q=0.5</stringProp>
+</elementProp>
+</collectionProp>
+</HeaderManager>
+<hashTree />
+<LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Step 1" enabled="true">
+<boolProp name="LoopController.continue_forever">false</boolProp>
+<stringProp name="LoopController.loops">1</stringProp>
+</LoopController>
+<hashTree>
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="http://wikipedia.org/">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">http://wikipedia.org/<collectionProp name="Arguments.arguments">
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">80</stringProp>
+<stringProp name="HTTPSampler.protocol">http</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://en.wikipedia.org/">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://en.wikipedia.org/<collectionProp name="Arguments.arguments">
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">en.wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://en.wikipedia.org/w/index.php">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://en.wikipedia.org/w/index.php<collectionProp name="Arguments.arguments">
+<elementProp elementType="HTTPArgument" name="title">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">Main_Page</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">title</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="action">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">edit</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">action</stringProp>
+</elementProp>
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">en.wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/w/index.php</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://en.wikipedia.org/w/api.php">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://en.wikipedia.org/w/api.php<collectionProp name="Arguments.arguments">
+<elementProp elementType="HTTPArgument" name="action">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">visualeditor</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">action</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="format">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">json</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">format</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="paction">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">metadata</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">paction</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="page">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">Main_Page</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">page</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="uselang">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">en</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">uselang</stringProp>
+</elementProp>
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">en.wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/w/api.php</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://en.wikipedia.org/api/rest_v1/transform/wikitext/to/html/Main_Page">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://en.wikipedia.org/api/rest_v1/transform/wikitext/to/html/Main_Page<collectionProp name="Arguments.arguments">
+<elementProp elementType="HTTPArgument" name="title">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">Main_Page</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">title</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="wikitext">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">&lt;!--        BANNER ACROSS TOP OF PAGE        --&gt;
+                        {| id="mp-topbanner" style="width:100%; background:#f9f9f9; margin:1.2em 0 6px 0; border:1px solid #ddd;"
+                        | style="width:61%; color:#000;" |
+                        &lt;!--        "WELCOME TO WIKIPEDIA" AND ARTICLE COUNT        --&gt;
+                        {| style="width:280px; border:none; background:none;"
+                        | style="width:280px; text-align:center; white-space:nowrap; color:#000;" |
+                        &lt;div style="font-size:162%; border:none; margin:0; padding:.1em; color:#000;"&gt;Welcome to [[Wikipedia]],&lt;/div&gt;
+                        &lt;div style="top:+0.2em; font-size:95%;"&gt;the [[free content|free]] [[encyclopedia]] that [[Wikipedia:Introduction|anyone can edit]].&lt;/div&gt;
+                        &lt;div id="articlecount" style="font-size:85%;"&gt;[[Special:Statistics|{{NUMBEROFARTICLES}}]] articles in [[English language|English]]&lt;/div&gt;
+                        |}
+                        &lt;!--        PORTAL LIST ON RIGHT-HAND SIDE        --&gt;
+                        | style="width:13%; font-size:95%;" |
+                        * [[Portal:Arts|Arts]]
+                        * [[Portal:Biography|Biography]]
+                        * [[Portal:Geography|Geography]]
+                        | style="width:13%; font-size:95%;" |
+                        * [[Portal:History|History]]
+                        * [[Portal:Mathematics|Mathematics]]
+                        * [[Portal:Science|Science]]
+                        | style="width:13%; font-size:95%;" |
+                        * [[Portal:Society|Society]]
+                        * [[Portal:Technology|Technology]]
+                        * '''[[Portal:Contents/Portals|All portals]]'''
+                        |}
+                        &lt;!--        MAIN PAGE BANNER        --&gt;
+                        {{#if:{{Main Page banner}}|
+                        &lt;table id="mp-banner" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;"&gt;
+                        &lt;tr&gt;&lt;td class="MainPageBG" style="padding:8px; background-color:#fffaf5; border:1px solid #f2e0ce; color:#000; font-size:100%;"&gt;{{Main Page banner}}
+                        &lt;/td&gt;&lt;/tr&gt;
+                        &lt;/table&gt;
+                        }}
+                        &lt;!--        TODAY'S FEATURED CONTENT        --&gt;
+                        {| id="mp-upper" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;"
+                        &lt;!--        TODAY'S FEATURED ARTICLE; DID YOU KNOW        --&gt;
+                        | class="MainPageBG" style="width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;" |
+                        {| id="mp-left" style="width:100%; vertical-align:top; background:#f5fffa;"
+                        | style="padding:2px;" | &lt;h2 id="mp-tfa-h2" style="margin:3px; background:#cef2e0; font-family:inherit; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;"&gt;{{#ifexpr:{{formatnum:{{PAGESIZE:Wikipedia:Today's featured article/{{#time:F j, Y}}}}|R}}&gt;150|From today's featured article|Featured article &lt;span style="font-size:85%; font-weight:normal;"&gt;(Check back later for today's.)&lt;/span&gt;}}&lt;/h2&gt;
+                        |-
+                        | style="color:#000;" | &lt;div id="mp-tfa" style="padding:2px 5px"&gt;{{#ifexpr:{{formatnum:{{PAGESIZE:Wikipedia:Today's featured article/{{#time:F j, Y}}}}|R}}&gt;150|{{Wikipedia:Today's featured article/{{#time:F j, Y}}}}|{{Wikipedia:Today's featured article/{{#time:F j, Y|-1 day}}}}}}&lt;/div&gt;
+                        |-
+                        | style="padding:2px;" | &lt;h2 id="mp-dyk-h2" style="margin:3px; background:#cef2e0; font-family:inherit; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;"&gt;Did you know...&lt;/h2&gt;
+                        |-
+                        | style="color:#000; padding:2px 5px 5px;" | &lt;div id="mp-dyk"&gt;{{Did you know}}&lt;/div&gt;
+                        |}
+                        | style="border:1px solid transparent;" |
+                        &lt;!--        IN THE NEWS and ON THIS DAY        --&gt;
+                        | class="MainPageBG" style="width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top;"|
+                        {| id="mp-right" style="width:100%; vertical-align:top; background:#f5faff;"
+                        | style="padding:2px;" | &lt;h2 id="mp-itn-h2" style="margin:3px; background:#cedff2; font-family:inherit; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"&gt;In the news&lt;/h2&gt;
+                        |-
+                        | style="color:#000; padding:2px 5px;" | &lt;div id="mp-itn"&gt;{{In the news}}&lt;/div&gt;
+                        |-
+                        | style="padding:2px;" | &lt;h2 id="mp-otd-h2" style="margin:3px; background:#cedff2; font-family:inherit; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"&gt;On this day...&lt;/h2&gt;
+                        |-
+                        | style="color:#000; padding:2px 5px 5px;" | &lt;div id="mp-otd"&gt;{{Wikipedia:Selected anniversaries/{{#time:F j}}}}&lt;/div&gt;
+                        |}
+                        |}
+                        &lt;!--        TODAY'S FEATURED LIST        --&gt;&lt;!-- CONDITIONAL SHOW --&gt;{{#switch:{{CURRENTDAYNAME}}|Monday|Friday=
+                        &lt;table id="mp-middle" style="width:100%; margin:4px 0 0 0; background:none; border-spacing: 0px;"&gt;
+                        &lt;tr&gt;
+                        &lt;td class="MainPageBG" style="width:100%; border:1px solid #f2cedd; background:#fff5fa; vertical-align:top; color:#000;"&gt;
+                        &lt;table id="mp-center" style="width:100%; vertical-align:top; background:#fff5fa; color:#000;"&gt;
+                        &lt;tr&gt;
+                        &lt;td style="padding:2px;"&gt;&lt;h2 id="mp-tfl-h2" style="margin:3px; background:#f2cedd; font-family:inherit; font-size:120%; font-weight:bold; border:1px solid #bfa3af; text-align:left; color:#000; padding:0.2em 0.4em"&gt;From today's featured list&lt;/h2&gt;&lt;/td&gt;
+                        &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td style="color:#000;"&gt;&lt;div id="mp-tfl" style="padding:2px 5px;"&gt;{{#ifexist:Wikipedia:Today's featured list/{{#time:F j, Y}}|{{Wikipedia:Today's featured list/{{#time:F j, Y}}}}|{{TFLempty}}}}&lt;/div&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                        &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;|}}&lt;!-- END CONDITIONAL SHOW --&gt;
+                        &lt;!--        TODAY'S FEATURED PICTURE        --&gt;
+                        {| id="mp-lower" style="margin:4px 0 0 0; width:100%; background:none; border-spacing: 0px;"
+                        | class="MainPageBG" style="width:100%; border:1px solid #ddcef2; background:#faf5ff; vertical-align:top; color:#000;" |
+                        {| id="mp-bottom" style="width:100%; vertical-align:top; background:#faf5ff; color:#000;"
+                        | style="padding:2px;" | &lt;h2 id="mp-tfp-h2" style="margin:3px; background:#ddcef2; font-family:inherit; font-size:120%; font-weight:bold; border:1px solid #afa3bf; text-align:left; color:#000; padding:0.2em 0.4em"&gt;{{#ifexist:Template:POTD protected/{{#time:Y-m-d}}|Today's featured picture | Featured picture&amp;ensp;&lt;span style="font-size:85%; font-weight:normal;"&gt;(Check back later for today's.)&lt;/span&gt;}}&lt;/h2&gt;
+                        |-
+                        | style="color:#000; padding:2px;" | &lt;div id="mp-tfp"&gt;{{#ifexist:Template:POTD protected/{{#time:Y-m-d}}|{{POTD protected/{{#time:Y-m-d}}}}|{{POTD protected/{{#time:Y-m-d|-1 day}}}}}}&lt;/div&gt;
+                        |}
+                        |}
+                        &lt;!--        SECTIONS AT BOTTOM OF PAGE        --&gt;
+                        &lt;div id="mp-other" style="padding-top:4px; padding-bottom:2px;"&gt;
+                        == Other areas of Wikipedia ==
+                        {{Other areas of Wikipedia}}
+                        &lt;/div&gt;&lt;div id="mp-sister"&gt;
+                        == Wikipedia's sister projects ==
+                        {{Wikipedia's sister projects}}
+                        &lt;/div&gt;&lt;div id="mp-lang"&gt;
+                        == Wikipedia languages ==
+                        {{Wikipedia languages}}
+                        &lt;/div&gt;
+                        &lt;!--        INTERWIKI STRAPLINE        --&gt;
+                        &lt;noinclude&gt;{{Main Page interwikis}}{{noexternallanglinks}}{{#if:{{Wikipedia:Main_Page/Tomorrow}}||}}&lt;/noinclude&gt;__NOTOC____NOEDITSECTION__
+                        </stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">wikitext</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="stash">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">true</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">stash</stringProp>
+</elementProp>
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">en.wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/api/rest_v1/transform/wikitext/to/html/Main_Page</stringProp>
+<stringProp name="HTTPSampler.method">POST</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://en.wikipedia.org/w/api.php">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://en.wikipedia.org/w/api.php<collectionProp name="Arguments.arguments">
+<elementProp elementType="HTTPArgument" name="action">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">query</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">action</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="format">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">json</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">format</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="prop">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">info|pageprops|pageimages|pageterms</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">prop</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="pithumbsize">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">80</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">pithumbsize</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="pilimit">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">50</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">pilimit</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="wbptterms">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">description</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">wbptterms</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="ppprop">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">disambiguation</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">ppprop</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="titles">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">Wikipedia|Free content|Encyclopedia|Wikipedia:Introduction|Special:Statistics|English language|Portal:Arts|Portal:Biography|Portal:Geography|Portal:History|Portal:Mathematics|Portal:Science|Portal:Society|Portal:Technology|Portal:Contents/Portals|Dover Athletic F.C.|Kalki Koechlin|Rogue River (Oregon)|Operation Ironside|Wikipedia:Today's featured article/January 2017|Wikipedia:Featured articles|Association football|Dover|Kent|1989â€“90 in English football|Promotion and relegation|Football Conference|Home ground|Isthmian League Premier Division|Isthmian League Division One South|Conference South|2013â€“14 in English football|Ebbsfleet United F.C.|Conference Premier|Crabble Athletic Ground|FA Cup|2010-11 in English football|2014-15 in English football|Henrietta Place|Marylebone|Henrietta Harley, Countess of Oxford and Countess Mortimer|Billy James (footballer)|Prisoner-of-war camp|Old Depot Museum|Pottawatomie massacre|Lubna Tahtamouni|Jordan|Salt Wells Pilot Plant|Piru Singh|Param Vir Chakra</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">titles</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="continue">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value"></stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">continue</stringProp>
+</elementProp>
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">en.wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/w/api.php</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://en.wikipedia.org/w/api.php">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://en.wikipedia.org/w/api.php<collectionProp name="Arguments.arguments">
+<elementProp elementType="HTTPArgument" name="action">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">query</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">action</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="format">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">json</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">format</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="prop">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">info|pageprops|pageimages|pageterms</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">prop</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="pithumbsize">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">80</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">pithumbsize</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="pilimit">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">50</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">pilimit</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="wbptterms">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">description</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">wbptterms</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="ppprop">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">disambiguation</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">ppprop</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="titles">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">Troublemaker: Surviving Hollywood and Scientology|Leah Remini|Scientology|Clay Higgins|John Wayne|Wikipedia:Recent additions|Wikipedia:Your first article|Template talk:Did you know|January 2017 European cold wave|Eastern Europe|Central Europe|2017 Istanbul nightclub attack|Istanbul|Carrie Fisher|Debbie Reynolds|George Michael|Tupolev Tu-154|2016 Russian Defence Ministry Tupolev Tu-154 crash|Sochi|Alexandrov Ensemble|Portal:Current events|Battle of Mosul (2016â€“17)|Deaths in 2017|Clare Hollingworth|Michael Chamberlain|Pioneer Cabin Tree|Peter Sarstedt|January 11|Public holidays in Morocco|1944|Eugenio MarÃ­a de Hostos|1839|1055|Theodora (11th century)|List of Byzantine emperors|Constantine IX Monomachos|1693|Mercalli intensity scale|1693 Sicily earthquake|Sicily|1912|Lawrence, Massachusetts|1912 Lawrence textile strike|1923|Occupation of the Ruhr|Weimar Republic|World War I reparations|Aftermath of World War I|2013|Special Operations Command (France)</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">titles</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="continue">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value"></stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">continue</stringProp>
+</elementProp>
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">en.wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/w/api.php</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://en.wikipedia.org/w/api.php">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://en.wikipedia.org/w/api.php<collectionProp name="Arguments.arguments">
+<elementProp elementType="HTTPArgument" name="action">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">query</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">action</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="format">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">json</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">format</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="prop">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">info|pageprops|pageimages|pageterms</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">prop</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="pithumbsize">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">80</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">pithumbsize</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="pilimit">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">35</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">pilimit</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="wbptterms">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">description</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">wbptterms</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="ppprop">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">disambiguation</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">ppprop</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="titles">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value">Bulo Marer hostage rescue attempt|Directorate-General for External Security|Al-Shabaab (militant group)|Bulo Marer|January 10|January 12|Wikipedia:Selected anniversaries/January|List of historical anniversaries|Coordinated Universal Time|Alexander Hamilton|Founding Fathers of the United States|United States Constitution|Federalist Party|United States Coast Guard|New York Post|United States Secretary of the Treasury|Presidency of George Washington|Implied powers|Government debt|Burrâ€“Hamilton duel|Aaron Burr|Bureau of Engraving and Printing|User:Godot13|Template:POTD/2017-01-10|Template:POTD/2017-01-09|Template:POTD/2017-01-08|Wikipedia:Picture of the day/January 2017|Wikipedia:Featured pictures|Wikipedia:Community portal|Wikipedia:Help desk|Wikipedia:Local Embassy|Wikipedia:Reference desk|Wikipedia:News|Wikipedia:Village pump|Wikimedia Foundation</stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">titles</stringProp>
+</elementProp>
+<elementProp elementType="HTTPArgument" name="continue">
+<boolProp name="HTTPArgument.always_encode">true</boolProp>
+<stringProp name="Argument.value"></stringProp>
+<stringProp name="Argument.metadata">=</stringProp>
+<boolProp name="HTTPArgument.use_equals">true</boolProp>
+<stringProp name="Argument.name">continue</stringProp>
+</elementProp>
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">en.wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/w/api.php</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://en.wikipedia.org/wiki/Wikipedia:About">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://en.wikipedia.org/wiki/Wikipedia:About<collectionProp name="Arguments.arguments">
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">en.wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/wiki/Wikipedia:About</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://en.wikipedia.org/wiki/Internet">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://en.wikipedia.org/wiki/Internet<collectionProp name="Arguments.arguments">
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">en.wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/wiki/Internet</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+<HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" enabled="true" testname="https://en.wikipedia.org/wiki/Main_Page">
+<elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">https://en.wikipedia.org/wiki/Main_Page<collectionProp name="Arguments.arguments">
+</collectionProp>
+</elementProp>
+<stringProp name="HTTPSampler.domain">en.wikipedia.org</stringProp>
+<stringProp name="HTTPSampler.port">443</stringProp>
+<stringProp name="HTTPSampler.protocol">https</stringProp>
+<stringProp name="HTTPSampler.contentEncoding"></stringProp>
+<stringProp name="HTTPSampler.path">/wiki/Main_Page</stringProp>
+<stringProp name="HTTPSampler.method">GET</stringProp>
+<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+<boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+<boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+<stringProp name="HTTPSampler.mimetype"></stringProp>
+<stringProp name="HTTPSampler.monitor">false</stringProp>
+<stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+</HTTPSampler>
+<hashTree />
+</hashTree>
+</hashTree>
+</hashTree>
+</hashTree>
+</jmeterTestPlan>

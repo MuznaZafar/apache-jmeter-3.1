@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.1" jmeter="3.1 r1770033">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1484122072000</longProp>
+        <longProp name="ThreadGroup.end_time">1484122072000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login HTTP Request  " enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">grant_type=password&amp;username=studiocoder@outlook.com&amp;password=111111aA?</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/token</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Authorization</stringProp>
+              <stringProp name="Header.value">Bearer ffbjblhcZnU875Dw-XxrjEg_ZGbUvn8WPZduYjvJXGK0F9DeZxWknz1HVI1vFm6erMe5Q3ryeOwb7h3sqDj5eNhYN6Hfc6z8cnAVrXnheqDGJS92XAZVe_AHsZ01Id5vy34NtiSomhv3FfVs_B3m0qbuBty1AtM5twifsFTgw7yfRcQU_Wx8aRUcRxqUOOe96A2SPNYAvo6uIRsvTybQV0uVUM_Na57Fx6S3wOnabYEME6euc38gpfL8wkV-1nLUjLOfuaNc1DfOHkYjCsg9j49Mrr9JNhE4fUVQDYuXcSyNU846PaE4OwWP9AN80iGkXV_djDCyLQKK8dBGed8OCdqc8MNOPOurFus4PwHPCMMTpdfhcdWuH-qYUQdjMK2VWMukdqZSBKworgPSuY5Kzqy1Xn-c4gIBJ3ubD9fUvaZZHQRcBteyzRy5Jhp94lqX43nnxyVm7Xaa4uJ1zpyIU47qiHS9y8iFNIlpwmIqd_OdxwWnaOIIYsiz4gC-DLD-Ks9y6BuN1aJqVM-ofsVLNA</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Distributor HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/APi/Distributors</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Manufacturer HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Manufactures</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Car Model HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/APi/CarModels/15</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Model Year HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/APi/ModelYears/2</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Part Category HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/APi/PartsCategories</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Sub Parts HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/APi/SubParts/8</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parts HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/APi/Parts?ManufactureID=15&amp;CarModelID=1&amp;ModelYearID=1&amp;PartsCategoryID=8&amp;SubPartID=1&amp;Country=Pakistan</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="User Role HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/Api/AspNetUsers?UserName=sm@smonte.com</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parts Detail HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/Api/Parts?partid=4</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Distributor Details HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/Api/Distributors?Distributorid=1f575ad6-d00a-492f-9f28-d875a929e431</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Chat HTTP Request" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+DistributorID:&quot;312321asdasd1&quot;,&#xd;
+RoomID:&quot;212a21&quot;,&#xd;
+ConsumerUsername:&quot;Islamabad&quot;,&#xd;
+}&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Chats</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Chat HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Chats/312321asdasd1</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Halfcut HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/HalfcutEngines?ManufactureID=15&amp;CarModelID=1&amp;ModelYearID=1&amp;Type=Halfcut&amp;Country=Pakistan</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Engine HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/HalfcutEngines?ManufactureID=15&amp;CarModelID=1&amp;ModelYearID=1&amp;Type=Engine&amp;Country=Pakistan</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Halfcut Dist Id HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/HalfcutEngines?DistributorID=2aebc04b-e93b-4d00-8dd2-c176e3c9315d&amp;Type=Halfcut </stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Part Dist Id HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Parts?DistributorID=1f575ad6-d00a-492f-9f28-d875a929e431 </stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Engine Dist Id HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/HalfcutEngines?DistributorID=98fe45b8-331e-40a7-9c62-aa30ed17c8b3&amp;Type=Halfcut </stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Signup Customer HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;City&quot;: &quot;Islamabad&quot;,&#xd;
+  &quot;Country&quot;: &quot;Pakistan&quot;,&#xd;
+  &quot;Email&quot;: &quot;sqatester@gmail.com&quot;,&#xd;
+  &quot;NameIdentifier&quot;: &quot;Saira123&quot;,&#xd;
+  &quot;Password&quot;: &quot;ssssss123&quot;&#xd;
+}&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Account/Register</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get All Premium Images HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/PremiumDistributor</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parts wrt Distributor HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Parts?DistributorID=8798796 </stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Distributor Status HTTP Request " enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;DistributorID&quot;:&quot;4fd47c35-cc7a-4171-be93-91db3c2def9a&quot;,&#xd;
+&quot;Status&quot;:&quot;1&quot;,&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/PutDistributorStatus?id=4fd47c35-cc7a-4171-be93-91db3c2def9a</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Dist Profile Registration HTTP Request  " enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;Address&quot;: &quot;e-11/3 markaz&quot;,&#xd;
+  &quot;Aftermark&quot;: &quot;no&quot;,&#xd;
+  &quot;ContactNumber&quot;: &quot;0512110167&quot;,&#xd;
+  &quot;Description&quot;: &quot;I am a rockstar&quot;,&#xd;
+  &quot;DistributorID&quot;: &quot;4fd47c35-cc7a-4171-be93-91db3c2def9a&quot;,&#xd;
+  &quot;Latitude&quot;: &quot;33.6952&quot;,&#xd;
+  &quot;Logo&quot;:&quot;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&quot;,&#xd;
+  &quot;Longitude&quot;: &quot;72.9695&quot;,&#xd;
+  &quot;Name&quot;: &quot;Silverback&quot;,&#xd;
+  &quot;OEM&quot;: &quot;no&quot;,&#xd;
+  &quot;Original&quot;: &quot;yes&quot;,&#xd;
+  &quot;Premium&quot;: &quot;no&quot;,&#xd;
+  &quot;Used&quot;: &quot;no&quot;,&#xd;
+  &quot;WebsiteUrl&quot;: &quot;http://47.88.136.184/WebApi/Help/Api/PUT-api-Distributors-id&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Distributors/4fd47c35-cc7a-4171-be93-91db3c2def9a</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Account Register Distributor HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;City&quot;: &quot;kabul&quot;,&#xd;
+  &quot;Country&quot;: &quot;Afghanistan&quot;,&#xd;
+  &quot;Email&quot;: &quot;somedistributor1@gmail.com&quot;,&#xd;
+  &quot;NameIdentifier&quot;: &quot;ak1&quot;,&#xd;
+  &quot;Password&quot;: &quot;ak1&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Account/RegisterDistributor</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Account Register FB Distributor HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;City&quot;: &quot;kabul&quot;,&#xd;
+  &quot;Country&quot;: &quot;Afghanistan&quot;,&#xd;
+  &quot;Email&quot;: &quot;somedistributorfb@gmail.com&quot;,&#xd;
+  &quot;NameIdentifier&quot;: &quot;ak1&quot;,&#xd;
+  &quot;Password&quot;: &quot;ak1&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Account/RegisterFacebookDistributor</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Account Register FB Consumer HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;City&quot;: &quot;kabul&quot;,&#xd;
+  &quot;Country&quot;: &quot;Afghanistan&quot;,&#xd;
+  &quot;Email&quot;: &quot;someconsumer1@gmail.com&quot;,&#xd;
+  &quot;NameIdentifier&quot;: &quot;ak1&quot;,&#xd;
+  &quot;Password&quot;: &quot;ak1&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Account/RegisterFacebookConsumer</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Account Register External HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;Email&quot;: &quot;someexternal@gmail.com&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Account/RegisterExternal</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Edit Halfcut/Engine complete details HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/GetHalfcutEngineCompleteDetails?id=12</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Edit Halfcut HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/GetEditHalfcut?HalfcutEngineID=12</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Halfcut/Engine HTTP Request" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/HalfcutEngines</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Put Halfcut/Engine HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;Aftermark&quot;: &quot;sample string 8&quot;,&#xd;
+  &quot;AftermarkImage&quot;: &quot;sample string 12&quot;,&#xd;
+  &quot;Approved&quot;: &quot;yes&quot;,&#xd;
+  &quot;CarModelID&quot;: 4,&#xd;
+  &quot;Description&quot;: &quot;sample string 16&quot;,&#xd;
+  &quot;DistributorID&quot;: &quot;sample string 2&quot;,&#xd;
+  &quot;HalfcutEngineID&quot;: 1,&#xd;
+  &quot;ManufactureID&quot;: 3,&#xd;
+  &quot;ModelYearID&quot;: 5,&#xd;
+  &quot;Name&quot;: &quot;sample string 15&quot;,&#xd;
+  &quot;OEM&quot;: &quot;sample string 9&quot;,&#xd;
+  &quot;OEMImage&quot;: &quot;sample string 13&quot;,&#xd;
+  &quot;Original&quot;: &quot;sample string 7&quot;,&#xd;
+  &quot;OriginalImage&quot;: &quot;sample string 11&quot;,&#xd;
+  &quot;Price&quot;: &quot;sample string 17&quot;,&#xd;
+  &quot;Type&quot;: &quot;sample string 14&quot;,&#xd;
+  &quot;Used&quot;: &quot;sample string 6&quot;,&#xd;
+  &quot;UsedImage&quot;: &quot;sample string 10&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/HalfcutEngines/12</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Halfcut/Engine HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;Aftermark&quot;: &quot;no&quot;,&#xd;
+  &quot;AftermarkImage&quot;: &quot;no&quot;,&#xd;
+  &quot;Approved&quot;: &quot;sample string 18&quot;,&#xd;
+  &quot;CarModelID&quot;: 4,&#xd;
+  &quot;Description&quot;: &quot;sample string 16&quot;,&#xd;
+  &quot;DistributorID&quot;: &quot;4fd47c35-cc7a-4171-be93-91db3c2def9a&quot;,&#xd;
+  &quot;HalfcutEngineID&quot;: 1,&#xd;
+  &quot;ManufactureID&quot;: 3,&#xd;
+  &quot;ModelYearID&quot;: 5,&#xd;
+  &quot;Name&quot;: &quot;sample string 15&quot;,&#xd;
+  &quot;OEM&quot;: &quot;no&quot;,&#xd;
+  &quot;OEMImage&quot;: &quot;no&quot;,&#xd;
+  &quot;Original&quot;: &quot;no&quot;,&#xd;
+  &quot;OriginalImage&quot;: &quot;no&quot;,&#xd;
+  &quot;Price&quot;: &quot;550&quot;,&#xd;
+  &quot;Type&quot;: &quot;sample string 14&quot;,&#xd;
+  &quot;Used&quot;: &quot;no&quot;,&#xd;
+  &quot;UsedImage&quot;: &quot;no&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/HalfcutEngines</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Consumer Favourite HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/ConsumerFavourite?ConsumerID=27</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Consumer Favourites HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;ConsumerID&quot;: &quot;10&quot;,&#xd;
+  &quot;DistributorID&quot;: &quot;12&quot;,&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/DeleteConsumerFavourite</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Favourites by ID HTTP Request" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Favourites/130</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Favourites HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;ConsumerID&quot;: &quot;10&quot;,&#xd;
+  &quot;DistributorID&quot;: &quot;12&quot;,&#xd;
+  &quot;FavouriteID&quot;: 1&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Favourites</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Favourites HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Favourites?consumerID=6&amp;DistributorID=15</stringProp>
+          <stringProp name="HTTPSampler.method">DELETE</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Distributor Country HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/GetAllDistributorCountry?Country=Afghanistan</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parts Complete Detail HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/GetPartCompleteDetails?partid=12</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Edit Part HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/GetEditPart?partid=10</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Parts HTTP Request" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Parts</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Put Parts HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;Aftermark&quot;: &quot;yes&quot;,&#xd;
+  &quot;AftermarkImage&quot;: &quot;no&quot;,&#xd;
+  &quot;Approved&quot;: &quot;no&quot;,&#xd;
+  &quot;CarModelID&quot;: 4,&#xd;
+  &quot;Description&quot;: &quot;sample string 4&quot;,&#xd;
+  &quot;DistributorID&quot;: &quot;4fd47c35-cc7a-4171-be93-91db3c2def9a&quot;,&#xd;
+  &quot;ManufactureID&quot;: 3,&#xd;
+  &quot;ModelYearID&quot;: 5,&#xd;
+  &quot;Name&quot;: &quot;sample string 3&quot;,&#xd;
+  &quot;OEM&quot;: &quot;no&quot;,&#xd;
+  &quot;OEMImage&quot;: &quot;no&quot;,&#xd;
+  &quot;Original&quot;: &quot;no&quot;,&#xd;
+  &quot;OriginalImage&quot;: &quot;no&quot;,&#xd;
+  &quot;PartsCategoryID&quot;: 6,&#xd;
+  &quot;PartsID&quot;: 10,&#xd;
+  &quot;Price&quot;: &quot;60&quot;,&#xd;
+  &quot;SubPartID&quot;: 10,&#xd;
+  &quot;Used&quot;: &quot;no&quot;,&#xd;
+  &quot;UsedImage&quot;: &quot;no&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">api/Parts/16</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Parts HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;Aftermark&quot;: &quot;sample string 7&quot;,&#xd;
+  &quot;AftermarkImage&quot;: &quot;sample string 11&quot;,&#xd;
+  &quot;Approved&quot;: &quot;sample string 19&quot;,&#xd;
+  &quot;CarModelID&quot;: 14,&#xd;
+  &quot;Description&quot;: &quot;sample string 4&quot;,&#xd;
+  &quot;DistributorID&quot;: &quot;sample string 2&quot;,&#xd;
+  &quot;ManufactureID&quot;: 13,&#xd;
+  &quot;ModelYearID&quot;: 15,&#xd;
+  &quot;Name&quot;: &quot;sample string 3&quot;,&#xd;
+  &quot;OEM&quot;: &quot;sample string 8&quot;,&#xd;
+  &quot;OEMImage&quot;: &quot;sample string 12&quot;,&#xd;
+  &quot;Original&quot;: &quot;sample string 6&quot;,&#xd;
+  &quot;OriginalImage&quot;: &quot;sample string 10&quot;,&#xd;
+  &quot;PartsCategoryID&quot;: 16,&#xd;
+  &quot;PartsID&quot;: 1,&#xd;
+  &quot;Price&quot;: &quot;sample string 18&quot;,&#xd;
+  &quot;SubPartID&quot;: 17,&#xd;
+  &quot;Used&quot;: &quot;sample string 5&quot;,&#xd;
+  &quot;UsedImage&quot;: &quot;sample string 9&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Parts</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AspNet User Roles HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/AspNetUserRoles</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AspNet User Roles by ID HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/AspNetUserRoles/2</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Years HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Years</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Years by ID HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/Years/3</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Favourite Distributors HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/FavouritesDistributors</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Favourite Distributors by ID HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/FavouritesDistributors/4</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Favourite Distributors HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;ConsumerID&quot;: &quot;27&quot;,&#xd;
+  &quot;DistributorID&quot;: &quot;4fd47c35-cc7a-4171-be93-91db3c2def9a&quot;,&#xd;
+  &quot;FavouriteID&quot;: 1&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">47.88.136.184/WebAPi</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/FavouritesDistributors</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table  " enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\Log.csv</stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
