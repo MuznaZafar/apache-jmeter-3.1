@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1489730296819,1262,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-1,,true,,0,0,2,2,0,0,0
+1489730297833,1023,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-2,,true,,0,0,2,2,0,0,0
+1489730298819,1071,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-3,,true,,0,0,2,2,0,0,0
+1489730299819,1052,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-4,,true,,0,0,2,2,0,0,0
+1489730300818,1027,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-5,,true,,0,0,2,2,0,0,0
+1489730301820,1056,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-6,,true,,0,0,2,2,0,0,0
+1489730302819,1015,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-7,,true,,0,0,2,2,0,0,0
+1489730303819,1051,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-8,,true,,0,0,2,2,0,0,0
+1489730304819,1051,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-9,,true,,0,0,2,2,0,0,0
+1489730305820,1058,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-10,,true,,0,0,1,1,0,0,0

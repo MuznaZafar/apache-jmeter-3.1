@@ -27,7 +27,7 @@
       </ThreadGroup>
       <hashTree>
         <org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTPublisherGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler" testname="MQTT Publisher" enabled="true">
-          <stringProp name="mqtt.broker.url">tcp://35.154.157.9</stringProp>
+          <stringProp name="mqtt.broker.url">tcp://35.154.27.43</stringProp>
           <stringProp name="mqtt.client.id">1488285660625.Muzna</stringProp>
           <stringProp name="mqtt.topic.name">Uzair</stringProp>
           <boolProp name="mqtt.message.retained">false</boolProp>
@@ -74,7 +74,7 @@
                 <connectTime>true</connectTime>
               </value>
             </objProp>
-            <stringProp name="filename"></stringProp>
+            <stringProp name="filename">C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\MQTT_Log.csv</stringProp>
           </ResultCollector>
           <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
@@ -114,6 +114,42 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\*.jtl</stringProp>
+        </ResultCollector>
+        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>

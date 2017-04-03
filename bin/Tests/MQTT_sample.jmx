@@ -28,11 +28,11 @@
       <hashTree>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">true</boolProp>
-          <stringProp name="LoopController.loops">300</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </LoopController>
         <hashTree>
-          <org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTPublisherGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler" testname="MQTT Publisher" enabled="true">
-            <stringProp name="mqtt.broker.url">tcp://35.154.27.43</stringProp>
+          <org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTPublisherGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler" testname="MQTT Publisher1" enabled="true">
+            <stringProp name="mqtt.broker.url">tcp://35.154.217.161</stringProp>
             <stringProp name="mqtt.client.id">1488285660625.Muzna</stringProp>
             <stringProp name="mqtt.topic.name">Door_lock</stringProp>
             <boolProp name="mqtt.message.retained">true</boolProp>
@@ -119,8 +119,8 @@
             </ResultCollector>
             <hashTree/>
           </hashTree>
-          <org.apache.jmeter.protocol.mqtt.sampler.SubscriberSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTSubscriberGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.SubscriberSampler" testname="MQTT Subscriber" enabled="true">
-            <stringProp name="mqtt.broker.url">tcp://35.154.27.43</stringProp>
+          <org.apache.jmeter.protocol.mqtt.sampler.SubscriberSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTSubscriberGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.SubscriberSampler" testname="MQTT Subscriber1" enabled="true">
+            <stringProp name="mqtt.broker.url">tcp://35.154.217.161</stringProp>
             <stringProp name="mqtt.client.id">1488285666829.Muzna</stringProp>
             <stringProp name="mqtt.topic.name">Door_lock</stringProp>
             <boolProp name="mqtt.clean.session">true</boolProp>
@@ -208,8 +208,8 @@
             <stringProp name="ConstantTimer.delay">200</stringProp>
           </ConstantTimer>
           <hashTree/>
-          <org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTPublisherGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler" testname="MQTT Pub2" enabled="true">
-            <stringProp name="mqtt.broker.url">tcp://35.154.27.43</stringProp>
+          <org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTPublisherGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler" testname="MQTT Publisher2" enabled="true">
+            <stringProp name="mqtt.broker.url">tcp://35.154.217.161</stringProp>
             <stringProp name="mqtt.client.id">1488789423460.Muzna</stringProp>
             <stringProp name="mqtt.topic.name">Door_lock</stringProp>
             <boolProp name="mqtt.message.retained">true</boolProp>
@@ -503,7 +503,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\MQTT Log.csv</stringProp>
+          <stringProp name="filename">C:\Users\Muzna\Downloads\apache-jmeter-3.1\bin\Tests\MQTT_001.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
@@ -542,7 +542,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report " enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>

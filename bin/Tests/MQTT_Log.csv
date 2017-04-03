@@ -55565,3 +55565,31 @@
 
 
 
+1489741688727,1044,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-1,,true,,0,0,2,2,0,0,0
+1489741689744,1094,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-2,,true,,0,0,2,2,0,0,0
+1489741690740,1085,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-3,,true,,0,0,2,2,0,0,0
+1489741691742,1088,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-4,,true,,0,0,2,2,0,0,0
+1489741692742,1099,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-5,,true,,0,0,2,2,0,0,0
+1489741693745,1081,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-6,,true,,0,0,2,2,0,0,0
+1489741694743,1086,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-7,,true,,0,0,2,2,0,0,0
+1489741695744,1071,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-8,,true,,0,0,2,2,0,0,0
+1489741696743,1100,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-9,,true,,0,0,2,2,0,0,0
+1489741697744,1091,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-10,,true,,0,0,1,1,0,0,0
+1489742779856,2393,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-1,,true,,0,0,3,3,0,0,0
+1489742782850,1235,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-4,,true,,0,0,4,4,0,0,0
+1489742781847,2638,MQTT Publisher,FAILED,"Unable publish messages.
+Exception: Client is not connected (32104)",Thread Group 1-3,text,false,,786,0,3,3,0,0,0
+1489742783848,642,MQTT Publisher,FAILED,"Unable publish messages.
+Exception: Client is not connected (32104)",Thread Group 1-5,text,false,,786,0,2,2,0,0,0
+1489742780866,3626,MQTT Publisher,FAILED,"Unable publish messages.
+Exception: Client is not connected (32104)",Thread Group 1-2,text,false,,786,0,2,2,0,0,0
+1489742797017,1180,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-1,,true,,0,0,2,2,0,0,0
+1489742798034,1068,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-2,,true,,0,0,2,2,0,0,0
+1489742800019,1165,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-4,,true,,0,0,3,3,0,0,0
+1489742799019,2217,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-3,,true,,0,0,2,2,0,0,0
+1489742801019,1171,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-5,,true,,0,0,2,2,0,0,0
+1489742802020,1161,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-6,,true,,0,0,2,2,0,0,0
+1489742803020,1190,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-7,,true,,0,0,2,2,0,0,0
+1489742804020,1167,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-8,,true,,0,0,2,2,0,0,0
+1489742805018,1181,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-9,,true,,0,0,2,2,0,0,0
+1489742806019,1189,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-10,,true,,0,0,1,1,0,0,0

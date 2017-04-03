@@ -1,0 +1,81 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1490080119173,913,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080120273,0,MQTT Subscriber,200,"
+Received 1 messages.
+Current message QOS : 0
+Is current message a duplicate : false
+Received timestamp of current message : 1490080118957
+Is current message a retained message : true",Thread Group 1-1,,true,,7,0,1,1,0,0,0
+1490080120474,850,MQTT Publisher,OK,Sent 1 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080121522,1,MQTT Publisher,OK,Sent 2 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080121723,0,MQTT Subscriber,200,"
+Received 2 messages.
+Current message QOS : 0
+Is current message a duplicate : false
+Received timestamp of current message : 1490080120505
+Is current message a retained message : false",Thread Group 1-1,,true,,6,0,1,1,0,0,0
+1490080121938,1,MQTT Publisher,OK,Sent 2 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080122142,1,MQTT Publisher,OK,Sent 3 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080122353,0,MQTT Subscriber,200,"
+Received 3 messages.
+Current message QOS : 0
+Is current message a duplicate : false
+Received timestamp of current message : 1490080121738
+Is current message a retained message : false",Thread Group 1-1,,true,,7,0,1,1,0,0,0
+1490080122575,1,MQTT Publisher,OK,Sent 3 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080122791,1,MQTT Publisher,OK,Sent 4 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080122991,0,MQTT Subscriber,200,"
+Received 4 messages.
+Current message QOS : 0
+Is current message a duplicate : false
+Received timestamp of current message : 1490080121938
+Is current message a retained message : false",Thread Group 1-1,,true,,6,0,1,1,0,0,0
+1490080123201,1,MQTT Publisher,OK,Sent 4 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080123401,1,MQTT Publisher,OK,Sent 5 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080123606,0,MQTT Subscriber,200,"
+Received 5 messages.
+Current message QOS : 0
+Is current message a duplicate : false
+Received timestamp of current message : 1490080122359
+Is current message a retained message : false",Thread Group 1-1,,true,,7,0,1,1,0,0,0
+1490080123806,1,MQTT Publisher,OK,Sent 5 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080124007,1,MQTT Publisher,OK,Sent 6 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080124207,0,MQTT Subscriber,200,"
+Received 6 messages.
+Current message QOS : 0
+Is current message a duplicate : false
+Received timestamp of current message : 1490080122560
+Is current message a retained message : false",Thread Group 1-1,,true,,6,0,1,1,0,0,0
+1490080124407,1,MQTT Publisher,OK,Sent 6 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080124607,1,MQTT Publisher,OK,Sent 7 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080124823,0,MQTT Subscriber,200,"
+Received 7 messages.
+Current message QOS : 0
+Is current message a duplicate : false
+Received timestamp of current message : 1490080122991
+Is current message a retained message : false",Thread Group 1-1,,true,,7,0,1,1,0,0,0
+1490080125038,1,MQTT Publisher,OK,Sent 7 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080125243,0,MQTT Publisher,OK,Sent 8 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080125455,0,MQTT Subscriber,200,"
+Received 8 messages.
+Current message QOS : 0
+Is current message a duplicate : false
+Received timestamp of current message : 1490080123201
+Is current message a retained message : false",Thread Group 1-1,,true,,6,0,1,1,0,0,0
+1490080125655,1,MQTT Publisher,OK,Sent 8 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080125855,1,MQTT Publisher,OK,Sent 9 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080126055,1,MQTT Subscriber,200,"
+Received 9 messages.
+Current message QOS : 0
+Is current message a duplicate : false
+Received timestamp of current message : 1490080123606
+Is current message a retained message : false",Thread Group 1-1,,true,,7,0,1,1,0,0,0
+1490080126256,0,MQTT Publisher,OK,Sent 9 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080126471,1,MQTT Publisher,OK,Sent 10 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
+1490080126678,0,MQTT Subscriber,200,"
+Received 10 messages.
+Current message QOS : 0
+Is current message a duplicate : false
+Received timestamp of current message : 1490080123806
+Is current message a retained message : false",Thread Group 1-1,,true,,6,0,1,1,0,0,0
+1490080126879,1,MQTT Publisher,OK,Sent 10 messages total,Thread Group 1-1,,true,,0,0,1,1,0,0,0
